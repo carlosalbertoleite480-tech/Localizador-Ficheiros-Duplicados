@@ -1,0 +1,21 @@
+LOCALIZADOR DE FICHEIROS DUPLICADOS — COMPILAÇÃO AUTOMÁTICA WINDOWS
+Copyright © 2026 Carlos Leite Fonseca. Todos os direitos reservados.
+Versão da aplicação: 1.5
+
+Este pacote inclui um workflow GitHub Actions que compila a aplicação num computador Windows alojado pelo GitHub. O Python é instalado apenas no ambiente de compilação; o computador onde utilizar o programa não precisa de Python.
+
+PASSOS
+1. Entre em https://github.com e crie uma conta, caso ainda não tenha.
+2. Crie um repositório novo, por exemplo: localizador-ficheiros-duplicados. Pode ser privado.
+3. Carregue para a raiz do repositório TODOS os ficheiros e pastas deste ZIP, incluindo a pasta oculta .github/workflows/build-windows.yml. Se o site não mostrar ficheiros ocultos, crie a pasta e o ficheiro workflow no GitHub com o mesmo caminho.
+4. Abra o separador Actions do repositório e escolha “Compilar EXE Windows”.
+5. Clique em “Run workflow” e confirme “Run workflow”. Também pode iniciar automaticamente após enviar os ficheiros para a branch main.
+6. Quando a execução terminar com sucesso, abra a execução concluída, desça até Artifacts e descarregue Localizador_Ficheiros_Duplicados_Windows11_v1_5.
+7. Extraia o ZIP descarregado. Dentro encontrará a pasta Localizador_Ficheiros_Duplicados; mantenha a pasta completa e execute Localizador_Ficheiros_Duplicados.exe.
+
+IMPORTANTE
+- Não copie apenas o .exe: mantenha consigo a pasta completa e os ficheiros de suporte.
+- A primeira compilação pode demorar alguns minutos.
+- Se o workflow falhar, abra a execução e copie a mensagem de erro para podermos corrigir.
+- O EXE ainda deve ser testado num Windows 11 antes de usar em ficheiros importantes.
+- O workflow não publica o programa numa página pública; o artefacto fica associado ao repositório e à execução. Os artefactos expiram após 30 dias.

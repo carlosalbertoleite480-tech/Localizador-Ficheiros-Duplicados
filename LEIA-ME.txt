@@ -1,0 +1,51 @@
+LOCALIZADOR DE FICHEIROS DUPLICADOS
+Copyright © 2026 Carlos Leite Fonseca. Todos os direitos reservados.
+
+Esta é uma versão de preparação do código-fonte. Ainda não inclui um executável Windows pré-compilado.
+
+FUNCIONALIDADES
+- Análise de pastas e discos à procura de duplicados exatos através de SHA-256.
+- Deteção aproximada de imagens visualmente semelhantes.
+- Separadores Lista e Imagens.
+- Lista compacta com tipo, tamanho e nome do ficheiro.
+- Ao selecionar uma linha, a localização completa aparece por baixo da lista.
+- Grelha de imagens com miniaturas e botão «Ver localização».
+- Exportação dos resultados para CSV.
+- Envio para a Reciclagem apenas após seleção e confirmação explícita.
+- Não elimina ficheiros automaticamente.
+
+COMO GERAR A VERSÃO AUTÓNOMA
+1. Num computador Windows com Python já instalado, extraia todo este ZIP para uma pasta normal.
+2. Execute COMPILAR_NO_WINDOWS.bat e aguarde pela conclusão.
+3. Confirme que existe dist\Localizador_Ficheiros_Duplicados\Localizador_Ficheiros_Duplicados.exe.
+4. Copie a pasta COMPLETA dist\Localizador_Ficheiros_Duplicados para o local onde pretende usar o programa.
+5. Teste o EXE antes de desinstalar Python do computador de compilação.
+
+IMPORTANTE SOBRE PYTHON
+Python é necessário apenas no computador e durante a compilação. O pacote gerado pelo PyInstaller inclui o interpretador e as dependências, pelo que o computador de destino não precisa de ter Python instalado. Este ZIP, por si só, ainda não é o executável autónomo.
+
+TESTE RECOMENDADO
+Antes de utilizar com ficheiros pessoais, teste numa pasta de ensaio que contenha duas cópias de um ficheiro e algumas imagens duplicadas. Confirme a lista, a pré-visualização, a exportação CSV e a caixa de confirmação da Reciclagem.
+
+NOTA
+A comparação perceptual de imagens é aproximada. Reveja sempre os resultados antes de enviar qualquer ficheiro para a Reciclagem.
+
+ATUALIZACAO VISUAL — 29/10/2026
+- Botões com fundo azul escuro e texto branco, passando para azul mais escuro ao passar o rato.
+- Tema visual ajustado para evitar texto branco sobre fundo branco no Windows.
+- Copyright: © 2026 Carlos Leite Fonseca.
+
+
+ATUALIZACAO DE MINIATURAS — 29/10/2026
+- Miniaturas maiores na vista Lista (até 76 × 56 px), com linhas mais altas.
+- Vista Imagens com pré-visualizações médias (até 240 × 180 px) e três cartões por linha para aproveitar melhor o espaço.
+- Copyright: © 2026 Carlos Leite Fonseca.
+
+
+Versão 1.1: ícone CLF aplicado também à janela compilada (incluído no pacote para evitar o ícone predefinido do Tkinter). Mantém a seleção de imagens na vista Imagens.
+Versão 1.0: ícone CLF e seleção de imagens na vista Imagens. Na vista Lista, selecione uma ou várias linhas; na vista Imagens, marque “Selecionar para eliminar”. Use “Enviar selecionados para a Reciclagem” e confirme a operação. Não há eliminação automática.
+
+
+VERSÃO 1.2 — IDENTIFICAÇÃO VISUAL
+- Logótipo CLF maior e legível no cabeçalho da aplicação.
+- Rodapé com © 2026 Carlos Leite Fonseca e versão 1.2.
